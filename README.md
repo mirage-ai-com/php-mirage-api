@@ -1,2 +1,3 @@
 # php-mirage-api
-🐘 Mirage API PHP Wrapper
+
+The Mirage API PHP wrapper. Access AI inference services.
