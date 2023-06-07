@@ -52,7 +52,7 @@ class Mirage {
   }
 
   private function _doPost($resource, $data) {
-    return $this->_rest->post($resource, $data)->decode_response();
+    return $this->_rest->post($resource, json_encode($data))->decode_response();
   }
 }
 
