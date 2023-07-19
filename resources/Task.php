@@ -20,6 +20,10 @@ class TaskResource {
     return $this->parent->_post("/task/answer/question", $data);
   }
 
+  public function summarizeParagraphs($data) {
+    return $this->parent->_post("/task/summarize/paragraphs", $data);
+  }
+
   public function summarizeConversation($data) {
     return $this->parent->_post("/task/summarize/conversation", $data);
   }
