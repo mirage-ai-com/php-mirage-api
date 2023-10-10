@@ -32,6 +32,10 @@ class TaskResource {
     return $this->parent->_post("/task/categorize/conversation", $data);
   }
 
+  public function rankQuestion($data) {
+    return $this->parent->_post("/task/rank/question", $data);
+  }
+
   public function translateText($data) {
     return $this->parent->_post("/task/translate/text", $data);
   }
