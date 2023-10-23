@@ -28,8 +28,8 @@ class TaskResource {
     return $this->parent->_post("/task/summarize/conversation", $data);
   }
 
-  public function categorizeConversation($data) {
-    return $this->parent->_post("/task/categorize/conversation", $data);
+  public function categorizeConversations($data) {
+    return $this->parent->_post("/task/categorize/conversations", $data);
   }
 
   public function rankQuestion($data) {
