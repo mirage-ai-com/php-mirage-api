@@ -20,8 +20,8 @@ $data = $client->task->transcribeSpeech([
   ],
 
   "media" => [
-    "type" => "audio/mp3",
-    "url" => "https://storage.crisp.chat/users/upload/session/5acfdb5400c15c00/audio1681224631050_9elgef.mp3"
+    "type" => "audio/webm",
+    "url" => "https://files.mirage-ai.com/dash/terminal/samples/transcribe-speech/hey-there.weba"
   ]
 ]);
 
