@@ -17,7 +17,7 @@ class Mirage {
 
   public function __construct($identifier, $key) {
     $this->_rest = new RestClient([
-      "user_agent"   => "php-mirage-api/1.3.1",
+      "user_agent"   => "php-mirage-api/1.4.0",
       "base_url"     => $this->DEFAULT_REST_HOST.$this->DEFAULT_REST_BASE,
       "content_type" => "application/json",
 
