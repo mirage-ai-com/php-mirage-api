@@ -16,6 +16,10 @@ class TaskResource {
     return $this->parent->_post("/task/transcribe/speech", $data);
   }
 
+  public function answerPrompt($data) {
+    return $this->parent->_post("/task/answer/prompt", $data);
+  }
+
   public function answerQuestion($data) {
     return $this->parent->_post("/task/answer/question", $data);
   }
