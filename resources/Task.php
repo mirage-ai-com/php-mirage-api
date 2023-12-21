@@ -43,6 +43,10 @@ class TaskResource {
   public function translateText($data) {
     return $this->parent->_post("/task/translate/text", $data);
   }
+
+  public function fraudSpamicity($data) {
+    return $this->parent->_post("/task/fraud/spamicity", $data);
+  }
 }
 
 ?>
