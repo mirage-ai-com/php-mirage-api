@@ -397,6 +397,44 @@ $client->task->fraudSpamicity([
 }
 ```
 
+#### ➡️ Spam Classify
+
+* **Method:** `$client->task->spamClassify(data)`
+* **Reference:** [Spam Classify](https://docs.mirage-ai.com/references/api/v1/#spam-classify)
+
+* **Request:**
+
+```php
+$client->task->spamClassify([
+  "sender" => [
+    "name" => "John Doe",
+    "email" => "john@example.com"
+  ],
+
+  "transcript" => [
+    [
+      "from" => "customer",
+      "origin" => "chat",
+      "text" => "Hello, I would like to discuss your services"
+    ]
+  ]
+]);
+```
+
+* **Response:**
+
+```json
+{
+  "reason": "processed",
+
+  "data": {
+    "class": "spam",
+    "confidence": 0.13,
+    "logprob": -0.10
+  }
+}
+```
+
 ### Data API
 
 #### ➡️ Context Ingest
