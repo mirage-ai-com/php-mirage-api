@@ -48,8 +48,12 @@ class TaskResource {
     return $this->parent->_post("/task/fraud/spamicity", $data);
   }
 
-  public function spamClassify($data) {
-    return $this->parent->_post("/task/spam/classify", $data);
+  public function spamConversation($data) {
+    return $this->parent->_post("/task/spam/conversation", $data);
+  }
+
+  public function spamDocument($data) {
+    return $this->parent->_post("/task/spam/document", $data);
   }
 }
 
